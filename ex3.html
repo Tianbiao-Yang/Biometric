@@ -15814,7 +15814,7 @@ mean of x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">setwd</span><span class="p">(</span><span class="s">&quot;/Users/tianbiaoyang/Desktop/Learning/knowledge/biometric/data&quot;</span><span class="p">)</span>
@@ -16603,7 +16603,7 @@ AQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIrV+DfkYszo+qB3p8AAAAASUVORK5CYII="
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># input data </span>
@@ -16662,7 +16662,7 @@ AQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIrV+DfkYszo+qB3p8AAAAASUVORK5CYII="
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># get Birthweight</span>
@@ -16708,7 +16708,7 @@ mean of x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">mean_bdata</span> <span class="o">&lt;-</span> <span class="nf">mean</span><span class="p">(</span><span class="n">Birthweight_data</span><span class="p">)</span>
@@ -16751,7 +16751,7 @@ mean of x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># a = 0.95, df = 19</span>
@@ -16805,7 +16805,7 @@ Please list the formulas for this and also the R code for it.(5’)</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># mean = 118, 假设u = 118</span>
@@ -16866,7 +16866,7 @@ mean of x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># mean = 118, 假设u = 118</span>
@@ -16927,13 +16927,10 @@ mean of x
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="c1">#  significance level 0.05, use power(), power is ?</span>
-<span class="n">power</span> <span class="o">=</span> <span class="nf">pt</span><span class="p">(</span><span class="nf">qt</span><span class="p">(</span><span class="m">0.025</span><span class="p">,</span><span class="m">19</span><span class="p">)</span> <span class="o">+</span> <span class="nf">abs</span><span class="p">(</span><span class="n">mean_bdata</span><span class="m">-118</span><span class="p">)</span><span class="o">/</span><span class="n">sd_error_bdata</span><span class="p">,</span><span class="m">19</span><span class="p">)</span>
-<span class="c1">#power.t.test(n = 20, delta = mean_bdata - 118, sd = sd(Birthweigh = &quot;one.sample&quot;))</span>
-<span class="n">power</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">power.t.test</span><span class="p">(</span><span class="n">n</span> <span class="o">=</span> <span class="m">20</span><span class="p">,</span> <span class="n">delta</span> <span class="o">=</span> <span class="n">mean_bdata</span> <span class="o">-</span> <span class="m">118</span><span class="p">,</span> <span class="n">sd</span> <span class="o">=</span> <span class="nf">sd</span><span class="p">(</span><span class="n">Birthweight_data</span><span class="p">),</span><span class="n">sig.level</span> <span class="o">=</span> <span class="m">0.05</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;one.sample&quot;</span><span class="p">,</span> <span class="n">strict</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -16950,8 +16947,18 @@ mean of x
 
 
 
-<div class="output_html rendered_html output_subarea ">
-0.0966793351083093
+
+<div class="output_text output_subarea ">
+<pre>
+     One-sample t test power calculation 
+
+              n = 20
+          delta = 2
+             sd = 12.01315
+      sig.level = 0.05
+          power = 0.1090245
+    alternative = two.sided
+</pre>
 </div>
 
 </div>
