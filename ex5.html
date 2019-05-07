@@ -13154,74 +13154,20 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">yield_data</span> <span class="o">&lt;-</span> <span class="nf">read.table</span><span class="p">(</span><span class="s">&#39;第五次作业5.1-yield.txt&#39;</span><span class="p">,</span> <span class="n">head</span> <span class="o">=</span> <span class="bp">T</span><span class="p">)</span>
-<span class="n">yield_data</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<table>
-<thead><tr><th scope=col>yield</th><th scope=col>seed</th></tr></thead>
-<tbody>
-	<tr><td>383</td><td>1  </td></tr>
-	<tr><td>406</td><td>1  </td></tr>
-	<tr><td>351</td><td>1  </td></tr>
-	<tr><td>400</td><td>1  </td></tr>
-	<tr><td>390</td><td>1  </td></tr>
-	<tr><td>361</td><td>1  </td></tr>
-	<tr><td>394</td><td>1  </td></tr>
-	<tr><td>395</td><td>1  </td></tr>
-	<tr><td>414</td><td>1  </td></tr>
-	<tr><td>382</td><td>1  </td></tr>
-	<tr><td>362</td><td>2  </td></tr>
-	<tr><td>373</td><td>2  </td></tr>
-	<tr><td>376</td><td>2  </td></tr>
-	<tr><td>371</td><td>2  </td></tr>
-	<tr><td>364</td><td>2  </td></tr>
-	<tr><td>357</td><td>2  </td></tr>
-	<tr><td>372</td><td>2  </td></tr>
-	<tr><td>349</td><td>2  </td></tr>
-	<tr><td>348</td><td>2  </td></tr>
-	<tr><td>360</td><td>2  </td></tr>
-	<tr><td>353</td><td>2  </td></tr>
-	<tr><td>398</td><td>3  </td></tr>
-	<tr><td>380</td><td>3  </td></tr>
-	<tr><td>393</td><td>3  </td></tr>
-	<tr><td>375</td><td>3  </td></tr>
-	<tr><td>365</td><td>3  </td></tr>
-	<tr><td>394</td><td>3  </td></tr>
-	<tr><td>388</td><td>3  </td></tr>
-	<tr><td>407</td><td>3  </td></tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">str</span><span class="p">(</span><span class="n">yield_data</span><span class="p">)</span>
@@ -13254,7 +13200,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;1&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -13292,7 +13238,7 @@ W = 0.93955, p-value = 0.548
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;2&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -13330,7 +13276,7 @@ W = 0.93528, p-value = 0.4667
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;3&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -13368,7 +13314,7 @@ W = 0.97869, p-value = 0.9561
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">bartlett.test</span><span class="p">(</span><span class="n">yield</span><span class="o">~</span><span class="n">seed</span><span class="p">,</span> <span class="n">yield_data</span><span class="p">)</span>
@@ -13414,7 +13360,7 @@ Bartlett&#39;s K-squared = 4.0299, df = 2, p-value = 0.1333
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">yield_data_heng</span><span class="o">&lt;-</span><span class="nf">c</span><span class="p">(</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;1&quot;</span><span class="n">]</span><span class="p">,</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;2&quot;</span><span class="n">]</span><span class="p">,</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;3&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -13478,7 +13424,7 @@ Bartlett&#39;s K-squared = 4.0299, df = 2, p-value = 0.1333
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">yield_data_heng</span><span class="o">&lt;-</span><span class="nf">c</span><span class="p">(</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;1&quot;</span><span class="n">]</span><span class="p">,</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;2&quot;</span><span class="n">]</span><span class="p">,</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;3&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -13517,7 +13463,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">TukeyHSD</span><span class="p">(</span><span class="nf">aov</span><span class="p">(</span><span class="n">yield_data_heng</span><span class="o">~</span><span class="n">Dosage</span><span class="p">))</span>
@@ -13606,60 +13552,20 @@ $Dosage
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">rat_data</span> <span class="o">&lt;-</span> <span class="nf">read.table</span><span class="p">(</span><span class="s">&quot;第五次作业5.2-data.txt&quot;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">T</span><span class="p">)</span>
-<span class="n">rat_data</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<table>
-<thead><tr><th scope=col>control</th><th scope=col>low</th><th scope=col>middle</th><th scope=col>high</th></tr></thead>
-<tbody>
-	<tr><td>20.79</td><td>22.22</td><td>28.56</td><td>31.93</td></tr>
-	<tr><td>22.91</td><td>24.74</td><td>28.67</td><td>37.94</td></tr>
-	<tr><td>27.21</td><td>21.53</td><td>25.28</td><td>39.76</td></tr>
-	<tr><td>19.34</td><td>19.66</td><td>30.28</td><td>27.94</td></tr>
-	<tr><td>17.85</td><td>25.89</td><td>23.13</td><td>29.65</td></tr>
-	<tr><td>23.79</td><td>29.10</td><td>23.47</td><td>34.23</td></tr>
-	<tr><td>22.60</td><td>18.93</td><td>28.88</td><td>32.63</td></tr>
-	<tr><td>18.53</td><td>18.64</td><td>29.62</td><td>29.13</td></tr>
-	<tr><td>23.23</td><td>26.39</td><td>24.82</td><td>39.62</td></tr>
-	<tr><td>20.14</td><td>25.49</td><td>34.64</td><td>36.15</td></tr>
-	<tr><td>26.71</td><td>20.43</td><td>22.29</td><td>28.85</td></tr>
-	<tr><td>19.36</td><td>22.69</td><td>29.22</td><td>24.07</td></tr>
-	<tr><td>17.22</td><td>29.67</td><td>25.63</td><td>29.29</td></tr>
-	<tr><td>24.13</td><td>20.36</td><td>35.12</td><td>35.24</td></tr>
-	<tr><td>25.85</td><td>22.74</td><td>32.32</td><td>36.13</td></tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">boxplot</span><span class="p">(</span><span class="n">rat_data</span><span class="p">)</span>
@@ -14161,7 +14067,7 @@ RU5ErkJggg=="
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">summary</span><span class="p">(</span><span class="n">rat_data</span><span class="p">)</span>
@@ -14232,7 +14138,7 @@ RU5ErkJggg=="
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">rat_data</span><span class="o">$</span><span class="n">control</span><span class="p">)</span>
@@ -14335,7 +14241,7 @@ W = 0.95715, p-value = 0.6431
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">bartlett.test</span><span class="p">(</span><span class="n">rat_data</span><span class="p">)</span>
@@ -14389,7 +14295,7 @@ Bartlett&#39;s K-squared = 2.1206, df = 3, p-value = 0.5478
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">str</span><span class="p">(</span><span class="n">rat_data</span><span class="p">)</span>
@@ -14424,7 +14330,7 @@ Bartlett&#39;s K-squared = 2.1206, df = 3, p-value = 0.5478
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">Time</span><span class="o">&lt;-</span><span class="nf">c</span><span class="p">(</span><span class="n">rat_data</span><span class="o">$</span><span class="n">control</span><span class="p">,</span><span class="n">rat_data</span><span class="o">$</span><span class="n">low</span><span class="p">,</span><span class="n">rat_data</span><span class="o">$</span><span class="n">middle</span><span class="p">,</span><span class="n">rat_data</span><span class="o">$</span><span class="n">high</span><span class="p">)</span>
@@ -14438,7 +14344,7 @@ Bartlett&#39;s K-squared = 2.1206, df = 3, p-value = 0.5478
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">summary</span><span class="p">(</span><span class="nf">aov</span><span class="p">(</span><span class="n">Time</span><span class="o">~</span><span class="n">Dosage</span><span class="p">))</span>
@@ -14475,7 +14381,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">TukeyHSD</span><span class="p">(</span><span class="nf">aov</span><span class="p">(</span><span class="n">Time</span><span class="o">~</span><span class="n">Dosage</span><span class="p">))</span>
@@ -14537,7 +14443,7 @@ $Dosage
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">Drug_1</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">40</span><span class="p">,</span><span class="m">10</span><span class="p">,</span><span class="m">35</span><span class="p">,</span><span class="m">25</span><span class="p">,</span><span class="m">20</span><span class="p">,</span><span class="m">15</span><span class="p">,</span><span class="m">35</span><span class="p">,</span><span class="m">15</span><span class="p">,</span><span class="m">-5</span><span class="p">,</span><span class="m">30</span><span class="p">,</span><span class="m">25</span><span class="p">,</span><span class="m">70</span><span class="p">,</span><span class="m">65</span><span class="p">,</span><span class="m">45</span><span class="p">,</span><span class="m">50</span><span class="p">)</span>
@@ -14552,7 +14458,7 @@ $Dosage
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">GainWeight</span><span class="o">&lt;-</span><span class="nf">c</span><span class="p">(</span><span class="n">Drug_1</span><span class="p">,</span><span class="n">Drug_2</span><span class="p">,</span><span class="n">Drug_3</span><span class="p">)</span>
@@ -14565,7 +14471,7 @@ $Dosage
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">Drug</span><span class="o">&lt;-</span><span class="nf">factor</span><span class="p">(</span><span class="nf">rep</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">,</span><span class="nf">c</span><span class="p">(</span><span class="m">15</span><span class="p">,</span><span class="m">15</span><span class="p">,</span><span class="m">10</span><span class="p">)))</span>
@@ -14658,7 +14564,7 @@ $Dosage
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Drug_1</span><span class="p">)</span>
@@ -14696,7 +14602,7 @@ W = 0.9778, p-value = 0.9523
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Drug_2</span><span class="p">)</span>
@@ -14734,7 +14640,7 @@ W = 0.98349, p-value = 0.9878
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Drug_3</span><span class="p">)</span>
@@ -14780,7 +14686,7 @@ W = 0.94005, p-value = 0.5536
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">bartlett.test</span><span class="p">(</span><span class="n">GainWeight</span><span class="o">~</span><span class="n">Drug</span><span class="p">)</span>
@@ -14826,7 +14732,7 @@ Bartlett&#39;s K-squared = 2.4482, df = 2, p-value = 0.294
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">summary</span><span class="p">(</span><span class="nf">aov</span><span class="p">(</span><span class="n">GainWeight</span><span class="o">~</span><span class="n">Drug</span><span class="p">))</span>
@@ -14863,7 +14769,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">TukeyHSD</span><span class="p">(</span><span class="nf">aov</span><span class="p">(</span><span class="n">GainWeight</span><span class="o">~</span><span class="n">Drug</span><span class="p">))</span>
@@ -14947,7 +14853,7 @@ B：饲料：普通饲料（B1），高脂饲料（B2）
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">BodyWeight</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">282.1</span><span class="p">,</span><span class="m">264.2</span><span class="p">,</span><span class="m">274.2</span><span class="p">,</span><span class="m">276.4</span><span class="p">,</span><span class="m">283.7</span><span class="p">,</span><span class="m">288</span><span class="p">,</span><span class="m">274.3</span><span class="p">,</span><span class="m">278.4</span><span class="p">,</span><span class="m">293.5</span><span class="p">,</span><span class="m">271.5</span><span class="p">,</span><span class="m">296.7</span><span class="p">,</span><span class="m">318</span><span class="p">,</span><span class="m">295.3</span><span class="p">,</span><span class="m">292.8</span><span class="p">,</span><span class="m">304.5</span><span class="p">,</span><span class="m">305.9</span><span class="p">,</span><span class="m">312.3</span><span class="p">,</span><span class="m">311.4</span><span class="p">,</span><span class="m">307.6</span><span class="p">,</span><span class="m">292.7</span><span class="p">,</span><span class="m">300.1</span><span class="p">,</span> <span class="m">307.5</span><span class="p">,</span><span class="m">294.2</span><span class="p">,</span><span class="m">312</span><span class="p">,</span><span class="m">300.2</span><span class="p">,</span><span class="m">292.6</span><span class="p">,</span><span class="m">302</span><span class="p">,</span><span class="m">306.9</span><span class="p">,</span><span class="m">313.3</span><span class="p">,</span><span class="m">312.4</span><span class="p">,</span><span class="m">284.5</span><span class="p">,</span><span class="m">263.7</span><span class="p">,</span><span class="m">292.3</span><span class="p">,</span> <span class="m">270.3</span><span class="p">,</span><span class="m">281.3</span><span class="p">,</span><span class="m">286.9</span><span class="p">,</span><span class="m">271.2</span><span class="p">,</span><span class="m">275.6</span><span class="p">,</span><span class="m">289.4</span><span class="p">,</span><span class="m">289.8</span><span class="p">,</span><span class="m">296.6</span><span class="p">,</span><span class="m">323.9</span><span class="p">,</span><span class="m">296.5</span><span class="p">,</span><span class="m">298.1</span><span class="p">,</span><span class="m">310</span><span class="p">,</span><span class="m">312.5</span><span class="p">,</span><span class="m">317.6</span><span class="p">,</span><span class="m">305.5</span><span class="p">,</span><span class="m">305.8</span><span class="p">,</span><span class="m">295.4</span><span class="p">,</span><span class="m">304</span><span class="p">,</span><span class="m">312.4</span><span class="p">,</span><span class="m">297.8</span><span class="p">,</span><span class="m">318.4</span><span class="p">,</span><span class="m">302.4</span><span class="p">,</span><span class="m">295.3</span><span class="p">,</span><span class="m">305.5</span><span class="p">,</span><span class="m">309.9</span><span class="p">,</span><span class="m">319.2</span><span class="p">,</span><span class="m">320.2</span><span class="p">)</span>
@@ -14960,7 +14866,7 @@ B：饲料：普通饲料（B1），高脂饲料（B2）
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">Data</span><span class="o">&lt;-</span><span class="nf">data.frame</span><span class="p">(</span><span class="n">BodyWeight</span><span class="o">=</span><span class="n">BodyWeight</span><span class="p">,</span> <span class="n">Fodder</span><span class="o">=</span><span class="nf">gl</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">30</span><span class="p">,</span><span class="m">60</span><span class="p">,</span><span class="n">labels</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;B1&quot;</span><span class="p">,</span><span class="s">&quot;B2&quot;</span><span class="p">)),</span><span class="n">Temperature</span><span class="o">=</span><span class="nf">gl</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="m">10</span><span class="p">,</span><span class="m">60</span><span class="p">,</span><span class="n">labels</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;A1&quot;</span><span class="p">,</span><span class="s">&quot;A2&quot;</span><span class="p">,</span><span class="s">&quot;A3&quot;</span><span class="p">)))</span>
@@ -14973,7 +14879,7 @@ B：饲料：普通饲料（B1），高脂饲料（B2）
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;1&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -15011,7 +14917,7 @@ W = 0.93955, p-value = 0.548
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;2&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -15049,7 +14955,7 @@ W = 0.93528, p-value = 0.4667
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">yield_data</span><span class="o">$</span><span class="n">yield[yield_data</span><span class="o">$</span><span class="n">seed</span><span class="o">==</span><span class="s">&quot;3&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -15087,7 +14993,7 @@ W = 0.97869, p-value = 0.9561
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight[Data</span><span class="o">$</span><span class="n">Temperature</span><span class="o">==</span><span class="s">&quot;A2&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -15125,7 +15031,7 @@ W = 0.93573, p-value = 0.1989
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight[Data</span><span class="o">$</span><span class="n">Temperature</span><span class="o">==</span><span class="s">&quot;A3&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -15163,7 +15069,7 @@ W = 0.96408, p-value = 0.6281
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight[Data</span><span class="o">$</span><span class="n">Fodder</span><span class="o">==</span><span class="s">&quot;B1&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -15201,7 +15107,7 @@ W = 0.95026, p-value = 0.1718
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight[Data</span><span class="o">$</span><span class="n">Fodder</span><span class="o">==</span><span class="s">&quot;B2&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -15239,7 +15145,7 @@ W = 0.96797, p-value = 0.4853
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">var.test</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight[1</span><span class="o">:</span><span class="m">30</span><span class="n">]</span><span class="p">,</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight[31</span><span class="o">:</span><span class="m">60</span><span class="n">]</span><span class="p">)</span>
@@ -15298,7 +15204,7 @@ ratio of variances
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">summary</span><span class="p">(</span><span class="nf">aov</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight</span><span class="o">~</span><span class="n">Data</span><span class="o">$</span><span class="n">Fodder</span><span class="o">*</span><span class="n">Data</span><span class="o">$</span><span class="n">Temperature</span><span class="p">))</span>
@@ -15352,7 +15258,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">TukeyHSD</span><span class="p">(</span><span class="nf">aov</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight</span><span class="o">~</span><span class="n">Data</span><span class="o">$</span><span class="n">Fodder</span><span class="o">*</span><span class="n">Data</span><span class="o">$</span><span class="n">Temperature</span><span class="p">))</span>
@@ -15422,6 +15328,19 @@ B2:A3-B1:A3  4.39  -7.422078 16.202078 0.8800277
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
