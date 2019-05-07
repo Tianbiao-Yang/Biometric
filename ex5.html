@@ -14917,7 +14917,7 @@ W = 0.96118, p-value = 0.5676
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight[Data</span><span class="o">$</span><span class="n">Temperature</span><span class="o">==</span><span class="s">&quot;A2&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -14955,7 +14955,7 @@ W = 0.93573, p-value = 0.1989
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight[Data</span><span class="o">$</span><span class="n">Temperature</span><span class="o">==</span><span class="s">&quot;A3&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -14993,7 +14993,7 @@ W = 0.96408, p-value = 0.6281
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight[Data</span><span class="o">$</span><span class="n">Fodder</span><span class="o">==</span><span class="s">&quot;B1&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -15031,7 +15031,7 @@ W = 0.95026, p-value = 0.1718
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">shapiro.test</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight[Data</span><span class="o">$</span><span class="n">Fodder</span><span class="o">==</span><span class="s">&quot;B2&quot;</span><span class="n">]</span><span class="p">)</span>
@@ -15058,6 +15058,44 @@ W = 0.95026, p-value = 0.1718
 
 data:  Data$BodyWeight[Data$Fodder == &#34;B2&#34;]
 W = 0.96797, p-value = 0.4853
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span><span class="nf">bartlett.test</span><span class="p">(</span><span class="n">Data</span><span class="o">$</span><span class="n">BodyWeight</span><span class="o">~</span><span class="n">Data</span><span class="o">$</span><span class="n">Temperature</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>
+	Bartlett test of homogeneity of variances
+
+data:  Data$BodyWeight by Data$Temperature
+Bartlett&#39;s K-squared = 0.19888, df = 2, p-value = 0.9053
 </pre>
 </div>
 
