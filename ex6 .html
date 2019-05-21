@@ -13089,7 +13089,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13140,7 +13140,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[137]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">xlsx</span><span class="p">)</span>
@@ -13343,7 +13343,7 @@ F-statistic: 228.4 on 2 and 4 DF,  p-value: 7.532e-05
 <ul>
 <li>p-value: 7.532e-05 &lt;&lt; 0.05,线性显著，模型合理</li>
 <li>y = 22.387<em>x1 + 327.672</em>x2 -0.591</li>
-<li>对x1和x2的回归系数进行T检验，X1显著，x2不显著</li>
+<li>对x1和x2的回归系数进行T检验，X1不显著，x2显著</li>
 </ul>
 
 </div>
@@ -15765,7 +15765,7 @@ Number of Fisher Scoring iterations: 2
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">data5</span> <span class="o">=</span> <span class="nf">read.table</span><span class="p">(</span><span class="s">&#39;homework-6.5-Drivers.csv&#39;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&#39;,&#39;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">T</span><span class="p">)</span>
@@ -15778,7 +15778,7 @@ Number of Fisher Scoring iterations: 2
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># question 1</span>
@@ -15845,7 +15845,7 @@ Number of Fisher Scoring iterations: 2
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># question2</span>
@@ -15910,12 +15910,12 @@ Number of Fisher Scoring iterations: 2
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># question3</span>
 <span class="n">a</span> <span class="o">=</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">x1</span> <span class="o">=</span> <span class="m">0</span><span class="p">,</span> <span class="n">x2</span> <span class="o">=</span> <span class="m">50</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="m">1</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">x1</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">x2</span> <span class="o">=</span> <span class="m">22</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="m">0</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">x1</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">x2</span> <span class="o">=</span> <span class="m">20</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="m">0</span><span class="p">)</span>
 <span class="nf">predict</span><span class="p">(</span><span class="n">fit5</span><span class="p">,</span> <span class="n">newdata</span> <span class="o">=</span> <span class="n">a</span><span class="p">)</span>
 <span class="nf">predict</span><span class="p">(</span><span class="n">fit5</span><span class="p">,</span> <span class="n">newdata</span> <span class="o">=</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
@@ -15947,7 +15947,7 @@ Number of Fisher Scoring iterations: 2
 
 
 <div class="output_html rendered_html output_subarea ">
-<strong>1:</strong> 0.282176139611724
+<strong>1:</strong> 0.282895535792091
 </div>
 
 </div>
